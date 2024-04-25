@@ -31,5 +31,12 @@ namespace ProjetoCelularConsole.Entities
             int number = int.Parse(Console.ReadLine());
             Console.WriteLine($"Ligando para {number}");
         }
+
+        public void RecebendoLigacao()
+        {
+            Console.WriteLine("Recebendo ligação...");
+        }
+
+        public abstract void InstalarApp(string nomeApp);
     }
 }
